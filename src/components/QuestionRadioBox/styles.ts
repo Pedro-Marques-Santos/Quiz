@@ -1,10 +1,7 @@
 import styled from "styled-components";
 
-interface StateQuestion {
-  isTrue: boolean;
-}
 
-export const RadioBox = styled.div<StateQuestion>`
+export const RadioBox = styled.div`
   cursor: pointer;
   padding-left: 19px;
   padding-right: 19px;
@@ -30,8 +27,6 @@ export const RadioBox = styled.div<StateQuestion>`
     border: 2px solid var(--yellow);
     background: var(--yellow);
   }
-
-  background: ${(props) => props.isTrue ? 'green' : 'white'};
 
 `;
 
