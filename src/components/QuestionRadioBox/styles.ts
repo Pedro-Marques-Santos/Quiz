@@ -1,13 +1,19 @@
 import styled from "styled-components";
 
+interface RadioBoxProps {
+  answer: string;
+  option: string | number;
+  answerSelected: string | number | undefined;
+}
 
-export const RadioBox = styled.div`
+
+export const RadioBox = styled.div<RadioBoxProps>`
   cursor: pointer;
   padding-left: 19px;
   padding-right: 19px;
   margin-bottom: 25px;
 
-  border: 2px solid var(--lightblue);
+  border: 1px solid var(--lightblue);
   color: var(--lightblue);
 
   height: 45px;
@@ -24,9 +30,13 @@ export const RadioBox = styled.div`
   transition: 0.25s;
   :hover {
     color: var(--light1);
-    border: 2px solid var(--yellow);
+    border: 1px solid var(--yellow);
     background: var(--yellow);
   }
+
+  background: ${(props) => props.answerSelected && props.option === props.answer ? "var(--lightblue)" : ""};
+  color: ${(props) => props.answerSelected && props.option === props.answer ? "white" : ""};
+  border: 1px solid ${(props) => props.answerSelected && props.option !== props.answer ? "red" : ""};
 
 `;
 

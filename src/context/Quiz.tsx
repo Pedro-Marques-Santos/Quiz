@@ -7,6 +7,10 @@ interface QuizProviderProps {
 
 interface ReducerAction {
   type: string;
+  playload?: {
+    aswer: string,
+    element: string | number
+  };
 }
 
 type TQuizContextProps = {
@@ -25,6 +29,7 @@ interface IInitialState {
   questions: Questions[];
   currentQuestion: number;
   score: number;
+  aswerSelected: string | number | undefined;
 }
 
 const STAGES = ['Start', 'Playing', 'End'];
@@ -37,7 +42,6 @@ const initialState = {
 } as IInitialState
 
 const quizReducer = (state: IInitialState, action: ReducerAction) => {
-  console.log(state, action)
 
   switch (action.type) {
     case "CHANGE_STETA":
@@ -58,7 +62,7 @@ const quizReducer = (state: IInitialState, action: ReducerAction) => {
     case "CHANGE_QUESTION":
       const nextQuestion = state.currentQuestion + 1;
       let endGame = false;
-      // se n existir um array em question
+      // se n existir um array no data question
       if (!questions[nextQuestion]) {
         endGame = true;
       }
@@ -66,11 +70,27 @@ const quizReducer = (state: IInitialState, action: ReducerAction) => {
       return {
         ...state,
         currentQuestion: nextQuestion,
+        aswerSelected: undefined,
         gameStage: endGame ? STAGES[2] : state.gameStage,
       }
 
     case "NEW_GAME":
+      console.log(state)
       return initialState;
+
+    case "CHECK_ANSWER":
+      if (state.aswerSelected) return state;
+
+      const aswer = action.playload?.aswer;
+      const option = action.playload?.element;
+      let correctAnswer = 0;
+
+      if (aswer === option) correctAnswer = 1;
+      return {
+        ...state,
+        score: state.score + correctAnswer,
+        aswerSelected: option
+      }
 
     default:
       return state;
