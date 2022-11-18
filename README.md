@@ -1,6 +1,24 @@
-# Getting Started with Create React App
+# CalcularIMC
+Quiz de questões da história do Brasil.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+- Motivação:
+
+Criei essa aplicações por conter múltiplos estados, pois nesse caso, torna-se fundamental utilizar o hook useReducer.
+
+- Resumo:
+
+O objetivo do projeto é fazer com que o usuário resolva as questões de história e então veja qual foi o total de acertos obtidos.
+
+Ademais, vale destacar que esse projeto foi um bom desafio para praticar Css com o componente de estilo styled-components.
+
+![image](https://user-images.githubusercontent.com/104912054/202705626-ab309717-dd87-4165-8643-9c3d38fdeee5.png)
+
+![image](https://user-images.githubusercontent.com/104912054/202705649-18cc9ee1-faa8-48f2-90ff-b77f19e156a8.png)
+
+![image](https://user-images.githubusercontent.com/104912054/202705679-ef8fb480-8bdd-4e17-92fd-00507b7573c9.png)
+
+![image](https://user-images.githubusercontent.com/104912054/202705733-8c84631f-c105-46c7-8f06-0a020df3899c.png)
+
 
 ## Available Scripts
 
