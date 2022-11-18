@@ -11,11 +11,16 @@ export const Question = styled.div`
   text-align: center;
   color: var(--blue);
   font-size: 24px;
+  text-align: justify;
   font-weight: 700;
   line-height: 36px;
 `;
 
-export const ContentButton = styled.div`
+interface ContentButtonProps {
+  whatCurrentQuestion: number | undefined;
+}
+
+export const ContentButton = styled.div<ContentButtonProps>`
   display: flex;
   justify-content: end;
 
@@ -35,6 +40,7 @@ export const ContentButton = styled.div`
     }
 
     :nth-child(2) {
+      display: flex;
       margin-right: 0px;
       background: var(--yellow);
       :hover {
@@ -43,7 +49,8 @@ export const ContentButton = styled.div`
       }
     }
 
-    display: flex;
+    //display: ${(props) => props.whatCurrentQuestion === 0 ? "none" : "flex"};
+    display: none;
     justify-content: center;
     align-items: center;
 

@@ -74,8 +74,18 @@ const quizReducer = (state: IInitialState, action: ReducerAction) => {
         gameStage: endGame ? STAGES[2] : state.gameStage,
       }
 
+    case "PREVIOUS_QUESTION":
+      if (state.currentQuestion <= 0) {
+        return state;
+      }
+      const previousQuestion = state.currentQuestion - 1;
+
+      return {
+        ...state,
+        currentQuestion: previousQuestion
+      }
+
     case "NEW_GAME":
-      console.log(state)
       return initialState;
 
     case "CHECK_ANSWER":

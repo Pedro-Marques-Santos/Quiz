@@ -10,25 +10,24 @@ const data = [
     answer: "Salvador",
   },
   {
-    question: "Com qual instrução declaramos uma constante em JavaScript?",
-    options: ["const", "let", "var", "define"],
-    answer: "const",
+    question: "Qual é a atual Capital do Brasil?",
+    options: ["São Paulo", "Campinas", "Rio de Janeiro", "Brasília"],
+    answer: "Brasília",
   },
   {
-    question: "Qual dos tipos de dado a seguir não existe em JavaScript?",
-    options: ["string", "number", "boolean", "float"],
-    answer: "float",
+    question: "Qual pessoa foi responsável por tranferir a capital de Salvador para o Rio de Janeiro?",
+    options: ["D. João VI", "D.Pedro I", "Marquês de Pombal", "Visconde de Barbacena"],
+    answer: "Marquês de Pombal",
   },
   {
-    question: "Qual dos métodos a seguir seleciona um elemento?",
-    options: ["querySelector", "parseInt", "sort", "reduce"],
-    answer: "querySelector",
+    question: "Qual Ministro da Fazendo criou o Plano Real?",
+    options: ["Eduardo Refinetti", "Henrique Meirelles", "Fernando H. Cardoso", "Paulo Haddad"],
+    answer: "Fernando H. Cardoso",
   },
   {
-    question:
-      "Qual destas propriedades da a quantidade de elementos de um array?",
-    options: ["qty", "length", "items", "index"],
-    answer: "length",
+    question: "Durante a permanência de D. João No Brasil anexou ao território brasileiro quais fronteiras?",
+    options: ["Amapá e Acre", "Guiana F. e Cisplatina", "Amapá e Cisplatina", "Sacramento e Amapá"],
+    answer: "Guiana F. e Cisplatina",
   },
 ];
 

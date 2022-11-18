@@ -18,8 +18,9 @@ export function Quests() {
     <ContainerQuests>
       <Question>{currentQuestion.question}</Question>
       <QuestionRadioBox />
-      <ContentButton>
-        <div>Anterior</div>
+      <ContentButton whatCurrentQuestion={quizState?.state.currentQuestion}>
+        <div
+          onClick={() => quizState?.dispatch({ type: "PREVIOUS_QUESTION" })}>Anterior</div>
         <div onClick={() => quizState?.dispatch({ type: "CHANGE_QUESTION" })}>Próxima</div>
       </ContentButton>
     </ContainerQuests>
