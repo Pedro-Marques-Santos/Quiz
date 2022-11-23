@@ -1,4 +1,4 @@
-# CalcularIMC
+# QUIZ
 Quiz de questões da história do Brasil.
 
 - Motivação:
