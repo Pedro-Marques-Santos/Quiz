@@ -11,13 +11,16 @@ O objetivo do projeto é fazer com que o usuário resolva as questões de histó
 
 Ademais, vale destacar que esse projeto foi um bom desafio para praticar Css com o componente de estilo styled-components.
 
-![image](https://user-images.githubusercontent.com/104912054/202705626-ab309717-dd87-4165-8643-9c3d38fdeee5.png)
+![image](https://user-images.githubusercontent.com/104912054/224035220-d7490073-762f-4393-8efd-e0394482303e.png)
 
-![image](https://user-images.githubusercontent.com/104912054/202705649-18cc9ee1-faa8-48f2-90ff-b77f19e156a8.png)
+![image](https://user-images.githubusercontent.com/104912054/224035265-b5af7637-1372-4cb4-94d0-5bdfd2197581.png)
 
-![image](https://user-images.githubusercontent.com/104912054/202705679-ef8fb480-8bdd-4e17-92fd-00507b7573c9.png)
+![image](https://user-images.githubusercontent.com/104912054/224035379-35ab13f0-52fd-4bb8-a2d9-4076869fe514.png)
 
-![image](https://user-images.githubusercontent.com/104912054/202705733-8c84631f-c105-46c7-8f06-0a020df3899c.png)
+![image](https://user-images.githubusercontent.com/104912054/224035455-a5e1fc74-b6ac-45ae-bac1-e8e89543fc05.png)
+
+![image](https://user-images.githubusercontent.com/104912054/224035604-bb2bf74e-4a74-4969-a474-3d6d5f4e5ace.png)
+
 
 
 ## Available Scripts
