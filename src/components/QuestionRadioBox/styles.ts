@@ -6,7 +6,6 @@ interface RadioBoxProps {
   answerSelected: string | number | undefined;
 }
 
-
 export const RadioBox = styled.div<RadioBoxProps>`
   cursor: pointer;
   padding-left: 19px;
@@ -16,10 +15,13 @@ export const RadioBox = styled.div<RadioBoxProps>`
   border: 1px solid var(--lightblue);
   color: var(--lightblue);
 
-  height: 45px;
+  height: 35px;
+  @media (max-width: 400px) {
+    height: 50px;
+  }
   border-radius: 12px;
 
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 500;
   line-height: 36px;
 
@@ -34,10 +36,15 @@ export const RadioBox = styled.div<RadioBoxProps>`
     background: var(--yellow);
   }
 
-  background: ${(props) => props.answerSelected && props.option === props.answer ? "var(--lightblue)" : ""};
-  color: ${(props) => props.answerSelected && props.option === props.answer ? "white" : ""};
-  border: 1px solid ${(props) => props.answerSelected && props.option !== props.answer ? "red" : ""};
-
+  background: ${(props) =>
+    props.answerSelected && props.option === props.answer
+      ? "var(--lightblue)"
+      : ""};
+  color: ${(props) =>
+    props.answerSelected && props.option === props.answer ? "white" : ""};
+  border: 1px solid
+    ${(props) =>
+      props.answerSelected && props.option !== props.answer ? "red" : ""};
 `;
 
 export const Answer = styled.div`
@@ -50,4 +57,4 @@ export const Answer = styled.div`
     line-height: 27px;
     margin-left: 40px;
   }
-`
+`;

@@ -6,14 +6,14 @@ export const ContainerQuests = styled.div`
 `;
 
 export const Question = styled.div`
-  margin-top: 20px;
-  margin-bottom: 20px;
+  margin-top: 5px;
+  margin-bottom: 15px;
   text-align: center;
   color: var(--blue);
-  font-size: 24px;
+  font-size: 20px;
   text-align: justify;
   font-weight: 700;
-  line-height: 36px;
+  line-height: 28px;
 `;
 
 interface ContentButtonProps {
@@ -27,8 +27,8 @@ export const ContentButton = styled.div<ContentButtonProps>`
   div {
     cursor: pointer;
     margin-right: 12px;
-    height: 56px;
-    width: 116px;
+    height: 50px;
+    width: 110px;
     left: 804px;
     top: 723px;
     border-radius: 12px;
@@ -49,15 +49,13 @@ export const ContentButton = styled.div<ContentButtonProps>`
       }
     }
 
-    //display: ${(props) => props.whatCurrentQuestion === 0 ? "none" : "flex"};
     display: none;
     justify-content: center;
     align-items: center;
 
-    font-size: 18px;
+    font-size: 17px;
     font-weight: 700;
     line-height: 27px;
     color: var(--light1);
-
   }
 `;

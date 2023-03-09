@@ -9,19 +9,22 @@ interface ICurrentQuestion {
 }
 
 export function Quests() {
-
   const quizState = useContext(QuizContext);
-  const currentQuestion =
-    quizState?.state.questions[quizState.state.currentQuestion] as unknown as ICurrentQuestion;
+  const currentQuestion = quizState?.state.questions[
+    quizState.state.currentQuestion
+  ] as unknown as ICurrentQuestion;
 
   return (
     <ContainerQuests>
       <Question>{currentQuestion.question}</Question>
       <QuestionRadioBox />
       <ContentButton whatCurrentQuestion={quizState?.state.currentQuestion}>
-        <div
-          onClick={() => quizState?.dispatch({ type: "PREVIOUS_QUESTION" })}>Anterior</div>
-        <div onClick={() => quizState?.dispatch({ type: "CHANGE_QUESTION" })}>Próxima</div>
+        <div onClick={() => quizState?.dispatch({ type: "PREVIOUS_QUESTION" })}>
+          Anterior
+        </div>
+        <div onClick={() => quizState?.dispatch({ type: "CHANGE_QUESTION" })}>
+          Próxima
+        </div>
       </ContentButton>
     </ContainerQuests>
   );
