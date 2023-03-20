@@ -17,7 +17,7 @@ export const RadioBox = styled.div<RadioBoxProps>`
 
   height: 35px;
   @media (max-width: 400px) {
-    height: 50px;
+    height: 45px;
   }
   border-radius: 12px;
 
@@ -45,6 +45,10 @@ export const RadioBox = styled.div<RadioBoxProps>`
   border: 1px solid
     ${(props) =>
       props.answerSelected && props.option !== props.answer ? "red" : ""};
+
+  @media (max-height: 700px) {
+    font-size: 15px;
+  }
 `;
 
 export const Answer = styled.div`
@@ -56,5 +60,8 @@ export const Answer = styled.div`
     font-weight: 500;
     line-height: 27px;
     margin-left: 40px;
+    @media (max-height: 700px) {
+      font-size: 15px;
+    }
   }
 `;

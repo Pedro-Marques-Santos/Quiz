@@ -1,9 +1,8 @@
 import { ContainerCard, ImgTop } from "./styles";
-import imgtop from "../../assets/homem.svg"
+import imgtop from "../../assets/homem.svg";
 import { Quests } from "../Quests";
 
 export function Card() {
-
   return (
     <>
       <ContainerCard>
@@ -14,5 +13,5 @@ export function Card() {
         <Quests />
       </ContainerCard>
     </>
-  )
+  );
 }

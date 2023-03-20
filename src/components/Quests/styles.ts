@@ -14,6 +14,10 @@ export const Question = styled.div`
   text-align: justify;
   font-weight: 700;
   line-height: 28px;
+  @media (max-height: 700px) {
+    margin-top: 0;
+    font-size: 15px;
+  }
 `;
 
 interface ContentButtonProps {
